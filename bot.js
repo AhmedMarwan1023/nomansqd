@@ -1,3 +1,8 @@
+onst Discord = require("discord.js")
+const client = new Discord.Client() 
+client.on('ready', () => {
+console.log(`Online.`);
+ });
 var config = {
   events: [
     {type: "CHANNEL_CREATE", logType: "CHANNEL_CREATE", limit: 4 , delay: 5000},
